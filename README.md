@@ -34,7 +34,7 @@ val modCfWebsite =
   Module("main",
          source = "github.com/riboseinc/terraform-aws-s3-cloudfront-website")(
     "fqdn" -> fqdn,
-    "ssl_certificate_arn" -> "${aws_acm_certificate_validation.cert.certificate_arn}",
+    "ssl_certificate_arn" -> certValidation.certificate_arn, // this presents one of the hard parts of this: it's not defined yet, so how can we access it? lazy?
     "allowed_ips" -> allowed_ips,
     "index_document" -> "index.html",
     "error_document" -> "404.html",
