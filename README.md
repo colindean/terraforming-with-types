@@ -17,6 +17,7 @@ val provCf = Provider.AWS("cloudfront", region = Region.US_East_1)
 
 val providers = Seq(provMain, provCf)
 
+// these would not need to be so explicit. Variable[T] would be determined by the type of `default`.
 val fqdn = Variable[FQDN](
   "fqdn",
   default = FQDN("mysite.example.com"),
