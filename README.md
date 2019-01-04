@@ -8,7 +8,7 @@ I got really into Terraform at a previous job but a coworker and I disliked the 
 
 ## Examples
 
-I do not have a large Terraform configuration, but a public one with which I am very familiar is [https://github.com/riboseinc/terraform-aws-s3-cloudfront-website]. Pull it up and compare the expressiveness of its example with this DSL:
+I do not have a large Terraform configuration, but a public one with which I am very familiar is [terraform-aws-s3-cloudfront-website](https://github.com/riboseinc/terraform-aws-s3-cloudfront-website). Pull it up and compare the expressiveness of its example with this DSL:
 
 ```scala
 
