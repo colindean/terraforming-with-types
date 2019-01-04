@@ -19,7 +19,7 @@ val providers = Seq(provMain, provCf)
 
 val fqdn = Variable[FQDN]("fqdn", default = FQDN("mysite.example.com"), description = "The fully-qualified domain name of the resulting S3 website."
 val domain = Variable[DomainName]("domain", default = DomainName("example.com"), description = "The domain name / ."
-val allowed_ips = Variable[List[CIDR]]("allowed_ips", default = CIDR("999.999.999.999/32")
+val allowed_ips = Variable[List[CIDR]]("allowed_ips", default = List(CIDR("999.999.999.999/32")) // or maybe "1.1.1.1/32".to_cidr?
 
 //how modules' parameters would be handled might have to be lower level 
 val modCfWebsite = Module("main", source = "github.com/riboseinc/terraform-aws-s3-cloudfront-website")(
