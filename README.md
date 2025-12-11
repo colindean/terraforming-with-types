@@ -87,3 +87,7 @@ outputs += Output("route53_fqdn", web.fqdn) // the type of this would be Output[
 ## License
 
 Don't use this, really. I'll license it appropriately if I actually make this work in any capacity.
+
+## See also
+
+https://github.com/hashicorp/terraform-cdk, but I only learned about it on December 10, 2025, when it was archived.
